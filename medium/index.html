@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Game Challenge</title>
+  <style type="text/css">
+  body {
+    background-image:url(assets/images/rink.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  h1, h2, .hits,  #colorMeWhite {
+    background: white;
+    padding: 0px;
+    margin: 0px;
+  } 
+
+  h1 {
+    text-align: center;
+  }
+
+  #logo {
+    width:50px;
+    height: 25px;
+  }
+
+
+
+    .hide {
+      display: none;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+
+  </style>
+</head>
+<body id="body">
+  <div style="width: 700px;margin: 0 auto;">
+    <h1 >Montreal Canadians vs. Boston Bruins!</h1>
+    <div id="colorMeWhite" style="margin: 0 auto;text-align:center">
+      <button id="reset">RESET</button><br>
+      NUMBER OF RESETS: <span id="num-resets">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="left">
+      <h2>
+        Montreal Canadians
+      </h2>
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
+        GOALS: <span id="teamone-numhits">0</span>
+      </div>
+      <img id=logo src="assets/images/candiansBackground.jpg">
+      <div>
+        <button id="teamone-shoot">SHOOT</button>
+      </div>
+    </div>
+    <div class="right">
+      <h2>
+        Away Team
+      </h2>
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
+        GOALS: <span id="teamtwo-numhits">0</span>
+     
+      </div>
+      <img id=logo src="assets/images/bruins.jpg">
+      <div>
+        <button id="teamtwo-shoot">SHOOT</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/medium.js"></script>
+</body>
+</html>
