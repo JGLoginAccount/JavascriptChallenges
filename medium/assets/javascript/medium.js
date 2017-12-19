@@ -40,27 +40,30 @@
 
   
 
-  var homeTeamShots = $('#teamone-numshots');
-  var awayTeamShots = $('#teamtwo-numshots');
 
-
-  var homeTeamGoals = $('#teamone-numhits');
-  var awayTeamGoals = $('#teamtwo-numhits');
-
-  var resetsNum = $('#num-resets');
-  var audioElement = document.createElement('audio');
-
-  var HomeTeamShoots=$('#teamone-shoot');
-  var RoadTeamShoots=$('#teamtwo-shoot');
-  
-  var reset=$('#reset');
-
-  var body=$('#body');
 
 
   //jQuery equivelent to window.onload = function{}
   //code in here wont run until page loads
   $(function(){
+
+    var homeTeamShots = $('#teamone-numshots');
+    var awayTeamShots = $('#teamtwo-numshots');
+  
+  
+    var homeTeamGoals = $('#teamone-numhits');
+    var awayTeamGoals = $('#teamtwo-numhits');
+  
+    var resetsNum = $('#num-resets');
+    var audioElement = document.createElement('audio');
+  
+    var HomeTeamShoots=$('#teamone-shoot');
+    var RoadTeamShoots=$('#teamtwo-shoot');
+    
+    var reset=$('#reset');
+  
+    var body=$('#body');
+
 
     audioElement.setAttribute('src', 'assets/audio/ICESKATE.mp3');
     
