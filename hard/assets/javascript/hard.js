@@ -1,3 +1,5 @@
+const newLocal = "notbacon";
+
 /**
  * Given the HTML provided, please make the following changes with javascript – don't change any HTML!:
  *
@@ -35,12 +37,18 @@
    //code in here wont run until page loads
    $(function(){
 
-    var str =  $('div');
+   var jg= $( "h1" );//.css( "border", "3px solid red" );
+   var z= $( "p" ).html(str);//.css( "border", "3px solid red" );
 
-    var res = str.innerhtml.replace("bacon", "notBacon");
+   jg.click(function() {
 
+
+      jg.css("color","red");
+     
 
 
    })
+console.log(z);
+z.replace("Bacon","poop");
 
- })();
+ })})();
